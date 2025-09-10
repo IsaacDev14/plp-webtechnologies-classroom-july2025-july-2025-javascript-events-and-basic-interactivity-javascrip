@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Interactive Web Page</h1>
+        <button id="modeToggle">Toggle Dark/Light Mode</button>
+    </header>
+
+    <section id="counterSection">
+        <h2>Counter</h2>
+        <button id="decrement">-</button>
+        <span id="counter">0</span>
+        <button id="increment">+</button>
+    </section>
+
+    <section id="faq">
+        <h2>FAQ</h2>
+        <div class="faq-item">
+            <button class="faq-question">What is JavaScript?</button>
+            <p class="faq-answer">JavaScript is a programming language for the web.</p>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Why use DOM manipulation?</button>
+            <p class="faq-answer">It allows dynamic updates to the page without reloading.</p>
+        </div>
+    </section>
+
+    <section id="formSection">
+        <h2>Sign Up Form</h2>
+        <form id="signupForm">
+            <input type="text" id="name" placeholder="Full Name">
+            <span class="error" id="nameError"></span>
+
+            <input type="email" id="email" placeholder="Email">
+            <span class="error" id="emailError"></span>
+
+            <input type="password" id="password" placeholder="Password">
+            <span class="error" id="passwordError"></span>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
